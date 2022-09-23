@@ -13,7 +13,28 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: GNav(
-        tabs: [GButton(icon: Icons.home)],
+        backgroundColor: Colors.black,
+        color: Colors.white,
+        activeColor: Colors.white,
+        gap: 8,
+        tabs: [
+          GButton(
+            icon: Icons.home_rounded,
+            text: 'Home',
+          ),
+          GButton(
+            icon: Icons.favorite_border_rounded,
+            text: 'Likes',
+          ),
+          GButton(
+            icon: Icons.search,
+            text: 'Search',
+          ),
+          GButton(
+            icon: Icons.settings,
+            text: 'Settings',
+          ),
+        ],
       ),
     );
   }
