@@ -22,8 +22,11 @@ class _HomePageState extends State<HomePage> {
             activeColor: Colors.white,
             tabBackgroundColor: Colors.grey.shade800,
             gap: 8,
-            padding: EdgeInsets.all(16),
-            tabs: [
+            onTabChange: (index) {
+              print(index);
+            },
+            padding: const EdgeInsets.all(16),
+            tabs: const [
               GButton(
                 icon: Icons.home_rounded,
                 text: 'Home',
